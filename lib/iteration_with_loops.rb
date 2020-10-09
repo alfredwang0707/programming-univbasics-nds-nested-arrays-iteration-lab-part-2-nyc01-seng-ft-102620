@@ -1,5 +1,11 @@
+require "pry"
 def find_min_in_nested_arrays(src)
-  # src will be an array of arrays of integers
-  # Produce a new Array that contains the smallest number of each of the nested arrays
-
-end
+ mini = []
+ i = 0 
+ while i < src.count do 
+    mini << src[i].min() 
+    i +=1
+ end 
+mini   
+end 
+# this lab can also be written with a if loop to swap out each element while iterating 
